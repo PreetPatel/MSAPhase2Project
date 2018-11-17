@@ -91,7 +91,7 @@ class App extends React.Component<{}, IState> {
 	}
 
 	private fetchMemes(tag: any) {
-		let url = "http://phase2apitest.azurewebsites.net/api/meme"
+		let url = "http://apiformemes.azurewebsites.net/api/meme"
 		if (tag !== "") {
 			url += "/tag?=" + tag
 		}
@@ -128,7 +128,7 @@ class App extends React.Component<{}, IState> {
 	
 		const title = titleInput.value
 		const tag = tagInput.value
-		const url = "http://phase2apitest.azurewebsites.net/api/meme/upload"
+		const url = "http://apiformemes.azurewebsites.net/api/meme/upload"
 	
 		const formData = new FormData()
 		formData.append("Title", title)
